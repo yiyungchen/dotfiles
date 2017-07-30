@@ -21,6 +21,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mkitt/tabline.vim'
+Plugin 'Rip-Rip/clang_complete'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -133,3 +134,6 @@ if has("cscope")
     nmap <C-@><C-@>d :vert scs find d <C-R>=expand("<cword>")<CR><CR>
 
 endif
+
+" clang_complete
+let g:clang_library_path = '/usr/lib/llvm-3.8/lib'
