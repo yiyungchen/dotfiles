@@ -5,7 +5,7 @@ export ZSH=/home/ian/.oh-my-zsh
 . /etc/zsh_command_not_found
 
 # Theme
-ZSH_THEME="robbyrussell"
+ZSH_THEME="ys"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
