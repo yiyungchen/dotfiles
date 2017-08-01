@@ -4,6 +4,7 @@ set ruler
 set number
 set splitright
 set splitbelow
+set backspace=indent,eol,start
 
 filetype off                  " required
 
@@ -21,6 +22,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mkitt/tabline.vim'
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
