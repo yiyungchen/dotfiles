@@ -55,6 +55,7 @@ nmap <F12> :TagbarToggle<CR>
 " Ack
 cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
+noremap <Leader>a :Ack <cword><cr>
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
