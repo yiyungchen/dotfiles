@@ -5,6 +5,10 @@ set number
 set splitright
 set splitbelow
 set backspace=indent,eol,start
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
 
 filetype off                  " required
 
@@ -59,7 +63,7 @@ cnoreabbrev Ack Ack!
 nnoremap <Leader>a :Ack!<Space>
 noremap <Leader>a :Ack <cword><cr>
 if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
+  let g:ackprg = 'ag --vimgrep --ignore tags --ignore "cscope.*"'
 endif
 
 " NERDTree

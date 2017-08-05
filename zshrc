@@ -1,8 +1,8 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/ian/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Command not found hint
-. /etc/zsh_command_not_found
+[[ -r /etc/zsh_command_not_found ]] && . /etc/zsh_command_not_found
 
 # Theme
 ZSH_THEME="ys"
@@ -21,6 +21,9 @@ export TERM='xterm-256color'
 # Bindkey
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
+
+# Alias
+alias ag='ag --ignore tags --ignore "cscope.*"'
 
 # No share history
 setopt noincappendhistory
