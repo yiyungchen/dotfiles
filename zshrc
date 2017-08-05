@@ -22,3 +22,6 @@ export TERM='xterm-256color'
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
 
+# No share history
+setopt noincappendhistory
+setopt nosharehistory
