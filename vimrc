@@ -29,6 +29,8 @@ Plugin 'mkitt/tabline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
 
+Plugin 'rdnetto/YCM-Generator'
+
 Plugin 'vim-scripts/Improved-AnsiEsc'
 
 " All of your Plugins must be added before the following line
@@ -147,3 +149,9 @@ endif
 " YCM
 let g:ycm_confirm_extra_conf = 0
 nnoremap <leader>jd :YcmCompleter GoTo<CR>
+
+" CtrlP
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_custom_ignore = {
+            \ 'dir':  '\v[\/](build|install)$',
+            \}

@@ -1,3 +1,5 @@
+source /opt/devtool6.rc
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -16,7 +18,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Term
-export TERM='xterm-256color'
+[ -n "$TMUX" ] && export TERM=screen-256color
 
 # Bindkey
 bindkey "\e[1~" beginning-of-line
