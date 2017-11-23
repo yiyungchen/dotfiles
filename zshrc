@@ -18,7 +18,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Term
-[ -n "$TMUX" ] && export TERM=screen-256color
+export TERM='xterm-256color'
 
 # Bindkey
 bindkey "\e[1~" beginning-of-line
