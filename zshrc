@@ -26,6 +26,7 @@ bindkey "\e[4~" end-of-line
 
 # Alias
 alias ag='ag --ignore tags --ignore "cscope.*"'
+alias tig='TERM=screen-256color tig'
 
 # No share history
 setopt noincappendhistory
