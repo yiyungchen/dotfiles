@@ -9,6 +9,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set softtabstop=4
+set fileencodings=utf-8,gbk,latin1
 
 filetype off                  " required
 
@@ -28,6 +29,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'mkitt/tabline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'ericcurtin/CurtineIncSw.vim'
 
 Plugin 'rdnetto/YCM-Generator'
 
@@ -155,3 +157,6 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
             \ 'dir':  '\v[\/](build|install)$',
             \}
+
+" CurtineIncSw
+map <F5> :call CurtineIncSw()<CR>
