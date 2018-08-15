@@ -1,4 +1,4 @@
-source /opt/devtool6.rc
+source /opt/devtool7.rc
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
