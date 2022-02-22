@@ -1,5 +1,3 @@
-source /opt/devtool7.rc
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -13,7 +11,7 @@ ZSH_THEME="ys"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -27,6 +25,10 @@ bindkey "\e[4~" end-of-line
 # Alias
 alias ag='ag --ignore tags --ignore "cscope.*"'
 alias tig='TERM=screen-256color tig'
+alias ssh='TERM=screen-256color ssh'
+alias tel='cd ~/git/magnus-checker; python3.7 telnet.py'
+alias sq='squeue --format="%.18i %.9P %.30j %.8u %.2t %.10M %.6D %R %x %Q %h"'
+alias sqc="squeue --format='%.18i %.9P %.30j %.8u %.2t %.10M %.6D %R %x %Q %h' | awk -F ' ' '{print \$3,\$4,\$5}' | grep -v NAME | sort | uniq -c; sq | wc -l"
 
 # No share history
 setopt noincappendhistory

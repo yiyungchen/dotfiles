@@ -10,6 +10,7 @@ set shiftwidth=4
 set expandtab
 set softtabstop=4
 set fileencodings=utf-8,gbk,latin1
+set hlsearch
 
 filetype off                  " required
 
@@ -20,6 +21,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'tomasr/molokai'
+Plugin 'lfv89/vim-interestingwords'
 
 Plugin 'majutsushi/tagbar'
 Plugin 'airblade/vim-gitgutter'
@@ -35,7 +37,9 @@ Plugin 'rdnetto/YCM-Generator'
 
 Plugin 'vim-scripts/Improved-AnsiEsc'
 
-Plugin 'ftplugin/python_autopep8.vim'
+Plugin 'tell-k/vim-autopep8'
+
+Plugin 'chrisbra/csv.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -162,3 +166,8 @@ let g:ctrlp_custom_ignore = {
 
 " CurtineIncSw
 map <F5> :call CurtineIncSw()<CR>
+
+" Autopep8
+let g:autopep8_max_line_length=120
+let g:autopep8_aggressive=1
+autocmd FileType python noremap <buffer> <F8> :call Autopep8()<CR>
